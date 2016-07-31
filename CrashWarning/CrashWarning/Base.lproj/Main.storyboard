@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrashWarning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QW1-Zi-y7O">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Factor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b8-y0-Zeb">
+                                <rect key="frame" x="173" y="220" width="254" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Cause:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90Y-u1-OKQ">
+                                <rect key="frame" x="231" y="419" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-rh-Ipq">
+                                <rect key="frame" x="99" y="320" width="402" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="402" id="Hoz-EL-8UN"/>
+                                    <constraint firstAttribute="height" constant="200" id="aWU-z4-6QQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QW1-Zi-y7O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Qn-uP-A3K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="90Y-u1-OKQ" secondAttribute="bottom" constant="151" id="LxV-SB-5Hl"/>
+                            <constraint firstItem="QW1-Zi-y7O" firstAttribute="top" secondItem="7b8-y0-Zeb" secondAttribute="bottom" constant="20" id="WZO-EN-jAP"/>
+                            <constraint firstItem="7b8-y0-Zeb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQp-jP-IwH"/>
+                            <constraint firstItem="RCH-rh-Ipq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ds4-eS-Xeu"/>
+                            <constraint firstItem="QW1-Zi-y7O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gHj-Of-gGP"/>
+                            <constraint firstItem="90Y-u1-OKQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jf7-Vx-6XO"/>
+                            <constraint firstItem="RCH-rh-Ipq" firstAttribute="top" secondItem="QW1-Zi-y7O" secondAttribute="bottom" constant="20" id="pib-bX-UL3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="causeLabel" destination="RCH-rh-Ipq" id="IXZ-0g-N4n"/>
+                        <outlet property="riskLabel" destination="QW1-Zi-y7O" id="X8P-5X-fp8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="476"/>
+        </scene>
+    </scenes>
+</document>
